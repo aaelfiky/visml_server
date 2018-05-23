@@ -16,16 +16,8 @@ import os.path
 import math
 import csv
 import numpy as np
-import zipfile
-import io
-# import pathlib
 
 import flask as fl
-
-# app = fl.Flask(__name__)
-
-
-
 
 
 app = Namespace(__name__)
@@ -86,13 +78,6 @@ def serve_pil_image(pil_img):
     return send_file(img_io, mimetype='image/png')
 
 
-
-
-@app.route('/')
-def _hello():
-  return jsonify({
-    'message': 'Hello World'
-  })
 
 @app.route('/<fromTo>')
 def get_labels_predict(fromTo):
