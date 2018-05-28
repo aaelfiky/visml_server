@@ -1,0 +1,46 @@
+{
+  "generator-phovea": {
+    "type": "app-slib",
+    "modules": [
+      "phovea_core",
+      "phovea_ui",
+      "phovea_server"
+    ],
+    "libraries": [
+      "d3"
+    ],
+    "libraryAliases": {
+      "d3": "d3/d3"
+    },
+    "libraryExternals": [
+      "d3",
+      "jquery",
+      "font-awesome"
+    ],
+    "name": "visml_serverplugin",
+    "author": "som3a123",
+    "today": "Tue, 06 Mar 2018 18:16:06 GMT",
+    "githubAccount": "phovea",
+    "app": "visml_serverplugin",
+    "clientOnly": false,
+    "entries": {
+      "app": "./src/index.ts"
+    },
+    "sextensions": [
+      {
+        "type": "namespace",
+        "id": "mnist-files",
+        "module": "mnist_files",
+        "extras": {
+          "namespace": "/api/mnist-files"
+        }
+      }
+    ],
+    "unknown": {
+      "requirements": [],
+      "dockerPackages": []
+    },
+    "ignores": [],
+    "extensions": []
+  }
+}
